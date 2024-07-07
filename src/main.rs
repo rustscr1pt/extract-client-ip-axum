@@ -6,6 +6,8 @@ async fn handler(insecure_ip: InsecureClientIp, secure_ip: SecureClientIp) -> St
     format!("{insecure_ip:?} {secure_ip:?}")
 }
 
+// Source of example : https://crates.io/crates/axum-client-ip/0.6.0
+
 #[tokio::main]
 async fn main() {
     async fn handler(insecure_ip: InsecureClientIp, secure_ip: SecureClientIp) -> String {
